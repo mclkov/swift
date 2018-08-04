@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,18 +26,29 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroud" translatesAutoresizingMaskIntoConstraints="NO" id="pUB-OG-j3p">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xZe-y3-8cz">
-                                <rect key="frame" x="142.5" y="30" width="90" height="90"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="abE-Ug-NwF">
+                                <rect key="frame" x="93" y="30" width="189" height="131"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xZe-y3-8cz">
+                                        <rect key="frame" x="49.5" y="0.0" width="90" height="90"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Design Studio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZo-Q2-Vjg">
+                                        <rect key="frame" x="0.0" y="90" width="189" height="41"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.93849887456700354" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pUB-OG-j3p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="12u-8d-Fp1"/>
                             <constraint firstItem="pUB-OG-j3p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DCv-wM-vFk"/>
-                            <constraint firstItem="xZe-y3-8cz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a6b-ru-d58"/>
                             <constraint firstAttribute="trailing" secondItem="pUB-OG-j3p" secondAttribute="trailing" id="gw5-Ep-mp0"/>
                             <constraint firstAttribute="bottom" secondItem="pUB-OG-j3p" secondAttribute="bottom" id="kLr-RO-FBn"/>
-                            <constraint firstItem="xZe-y3-8cz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="yEN-X9-xNO"/>
+                            <constraint firstItem="abE-Ug-NwF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="mos-7X-vRm"/>
+                            <constraint firstItem="abE-Ug-NwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qZw-cd-82s"/>
                         </constraints>
                     </view>
                 </viewController>
