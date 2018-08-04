@@ -46,29 +46,54 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vx0-p7-jS6">
-                                <rect key="frame" x="13" y="209" width="348" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create a website">
-                                    <color key="titleColor" red="0.95684875421750937" green="0.94964741715369005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-fI-6gh">
-                                <rect key="frame" x="13" y="279" width="348" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create a mobile app">
-                                    <color key="titleColor" red="0.95684875420000004" green="0.94964741720000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MbL-2d-5L7">
+                                <rect key="frame" x="10" y="209" width="355" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vx0-p7-jS6">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                        <color key="backgroundColor" red="0.98552535029999999" green="0.96101248439999998" blue="1" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="A4i-Ne-arF"/>
+                                        </constraints>
+                                        <state key="normal" title="Create a website">
+                                            <color key="titleColor" red="0.95684875421750937" green="0.94964741715369005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-fI-6gh">
+                                        <rect key="frame" x="0.0" y="65" width="355" height="50"/>
+                                        <color key="backgroundColor" red="0.98552535029999999" green="0.96101248439999998" blue="1" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TPc-21-wj1"/>
+                                        </constraints>
+                                        <state key="normal" title="Create a mobile app">
+                                            <color key="titleColor" red="0.95684875420000004" green="0.94964741720000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-GQ-coj">
+                                        <rect key="frame" x="0.0" y="130" width="355" height="50"/>
+                                        <color key="backgroundColor" red="0.98552535029999999" green="0.96101248439999998" blue="1" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gf0-VA-rxl"/>
+                                        </constraints>
+                                        <state key="normal" title="Create a desktop app">
+                                            <color key="titleColor" red="0.95684875420000004" green="0.94964741720000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pUB-OG-j3p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="12u-8d-Fp1"/>
                             <constraint firstItem="pUB-OG-j3p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DCv-wM-vFk"/>
+                            <constraint firstAttribute="trailing" secondItem="MbL-2d-5L7" secondAttribute="trailing" id="GHC-pY-gP4"/>
+                            <constraint firstItem="MbL-2d-5L7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RBJ-Ii-MkO"/>
+                            <constraint firstItem="MbL-2d-5L7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="XCX-tB-Dc5"/>
                             <constraint firstAttribute="trailing" secondItem="pUB-OG-j3p" secondAttribute="trailing" id="gw5-Ep-mp0"/>
                             <constraint firstAttribute="bottom" secondItem="pUB-OG-j3p" secondAttribute="bottom" id="kLr-RO-FBn"/>
                             <constraint firstItem="abE-Ug-NwF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="mos-7X-vRm"/>
                             <constraint firstItem="abE-Ug-NwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qZw-cd-82s"/>
+                            <constraint firstAttribute="trailing" secondItem="MbL-2d-5L7" secondAttribute="trailing" constant="10" id="xmT-bk-g92"/>
                         </constraints>
                     </view>
                 </viewController>
