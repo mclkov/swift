@@ -14,6 +14,7 @@
 		60DE48C52115DD5800D85A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DE48C32115DD5800D85A27 /* LaunchScreen.storyboard */; };
 		60DE48D02115DD5800D85A27 /* designStudioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE48CF2115DD5800D85A27 /* designStudioAppTests.swift */; };
 		60DE48DB2115DD5800D85A27 /* designStudioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE48DA2115DD5800D85A27 /* designStudioAppUITests.swift */; };
+		60DE48EA21171AEB00D85A27 /* MenuBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE48E921171AEB00D85A27 /* MenuBorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		60DE48D62115DD5800D85A27 /* designStudioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = designStudioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DE48DA2115DD5800D85A27 /* designStudioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = designStudioAppUITests.swift; sourceTree = "<group>"; };
 		60DE48DC2115DD5800D85A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DE48E921171AEB00D85A27 /* MenuBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		60DE48B92115DD5800D85A27 /* designStudioApp */ = {
 			isa = PBXGroup;
 			children = (
+				60DE48E821171ABB00D85A27 /* Views */,
 				60DE48BA2115DD5800D85A27 /* AppDelegate.swift */,
 				60DE48BC2115DD5800D85A27 /* ViewController.swift */,
 				60DE48BE2115DD5800D85A27 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				60DE48DC2115DD5800D85A27 /* Info.plist */,
 			);
 			path = designStudioAppUITests;
+			sourceTree = "<group>";
+		};
+		60DE48E821171ABB00D85A27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60DE48E921171AEB00D85A27 /* MenuBorderButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DE48BD2115DD5800D85A27 /* ViewController.swift in Sources */,
+				60DE48EA21171AEB00D85A27 /* MenuBorderButton.swift in Sources */,
 				60DE48BB2115DD5800D85A27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
