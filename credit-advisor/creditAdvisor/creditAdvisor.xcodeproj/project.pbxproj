@@ -16,6 +16,9 @@
 		60AE2380211C1AA500352DF2 /* creditAdvisorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE237F211C1AA500352DF2 /* creditAdvisorUITests.swift */; };
 		60AE2393211C2BF500352DF2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2392211C2BF500352DF2 /* CustomTextField.swift */; };
 		60AE2395211C2D6F00352DF2 /* LanguageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2394211C2D6F00352DF2 /* LanguageExtension.swift */; };
+		60AE2397211C5AD200352DF2 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2396211C5AD200352DF2 /* Price.swift */; };
+		60C2165A211C6094009263B3 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2396211C5AD200352DF2 /* Price.swift */; };
+		60C2165B211C6484009263B3 /* LanguageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2394211C2D6F00352DF2 /* LanguageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		60AE2381211C1AA500352DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60AE2392211C2BF500352DF2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		60AE2394211C2D6F00352DF2 /* LanguageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageExtension.swift; sourceTree = "<group>"; };
+		60AE2396211C5AD200352DF2 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 		60AE238F211C1AEC00352DF2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				60AE2396211C5AD200352DF2 /* Price.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 				60AE2362211C1AA500352DF2 /* MainVC.swift in Sources */,
 				60AE2360211C1AA500352DF2 /* AppDelegate.swift in Sources */,
 				60AE2393211C2BF500352DF2 /* CustomTextField.swift in Sources */,
+				60AE2397211C5AD200352DF2 /* Price.swift in Sources */,
 				60AE2395211C2D6F00352DF2 /* LanguageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C2165B211C6484009263B3 /* LanguageExtension.swift in Sources */,
 				60AE2375211C1AA500352DF2 /* creditAdvisorTests.swift in Sources */,
+				60C2165A211C6094009263B3 /* Price.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
