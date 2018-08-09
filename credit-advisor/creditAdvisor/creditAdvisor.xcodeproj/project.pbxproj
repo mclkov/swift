@@ -14,6 +14,8 @@
 		60AE236A211C1AA500352DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AE2368211C1AA500352DF2 /* LaunchScreen.storyboard */; };
 		60AE2375211C1AA500352DF2 /* creditAdvisorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2374211C1AA500352DF2 /* creditAdvisorTests.swift */; };
 		60AE2380211C1AA500352DF2 /* creditAdvisorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE237F211C1AA500352DF2 /* creditAdvisorUITests.swift */; };
+		60AE2393211C2BF500352DF2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2392211C2BF500352DF2 /* CustomTextField.swift */; };
+		60AE2395211C2D6F00352DF2 /* LanguageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2394211C2D6F00352DF2 /* LanguageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		60AE237B211C1AA500352DF2 /* creditAdvisorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = creditAdvisorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AE237F211C1AA500352DF2 /* creditAdvisorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditAdvisorUITests.swift; sourceTree = "<group>"; };
 		60AE2381211C1AA500352DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AE2392211C2BF500352DF2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		60AE2394211C2D6F00352DF2 /* LanguageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		60AE238D211C1AD800352DF2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				60AE2394211C2D6F00352DF2 /* LanguageExtension.swift */,
+				60AE2392211C2BF500352DF2 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,6 +291,8 @@
 			files = (
 				60AE2362211C1AA500352DF2 /* MainVC.swift in Sources */,
 				60AE2360211C1AA500352DF2 /* AppDelegate.swift in Sources */,
+				60AE2393211C2BF500352DF2 /* CustomTextField.swift in Sources */,
+				60AE2395211C2D6F00352DF2 /* LanguageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
