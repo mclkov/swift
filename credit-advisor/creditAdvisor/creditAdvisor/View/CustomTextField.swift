@@ -8,11 +8,22 @@
 
 import UIKit
 
+@IBDesignable
 class CustomTextField: UITextField {
     override func awakeFromNib()
     {
         super.awakeFromNib()
+        customizeView()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        customizeView()
+    }
+    
+    func customizeView ()
+    {
         backgroundColor = LanguageExtension.rgba(r: 255, g: 255, b: 255, a: 0.25)
         textColor = LanguageExtension.rgba(r: 255, g: 255, b: 255)
     }
+
 }
