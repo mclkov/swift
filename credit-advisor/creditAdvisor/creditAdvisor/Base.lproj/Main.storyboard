@@ -45,17 +45,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvx-7I-Rcw" customClass="CustomTextField" customModule="creditAdvisor" customModuleProvider="target">
-                                <rect key="frame" x="62.5" y="131" width="250" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item price" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvx-7I-Rcw" customClass="CustomTextField" customModule="creditAdvisor" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="131" width="250" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AYJ-NE-Het"/>
                                     <constraint firstAttribute="width" constant="250" id="hXW-gd-ieX"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evT-tk-iPl" customClass="CustomTextField" customModule="creditAdvisor" customModuleProvider="target">
-                                <rect key="frame" x="62" y="186" width="250" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Percents for month" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evT-tk-iPl" customClass="CustomTextField" customModule="creditAdvisor" customModuleProvider="target">
+                                <rect key="frame" x="62" y="196" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="ffR-OS-NeV"/>
                                 </constraints>
@@ -72,6 +73,7 @@
                             <constraint firstItem="vvx-7I-Rcw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLh-bC-6Up"/>
                             <constraint firstItem="xx0-rQ-hIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NgS-i6-U38"/>
                             <constraint firstItem="xx0-rQ-hIT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="U1q-Yr-TNq"/>
+                            <constraint firstItem="evT-tk-iPl" firstAttribute="height" secondItem="vvx-7I-Rcw" secondAttribute="height" id="Uih-Fd-yMe"/>
                             <constraint firstItem="Pgg-IV-fPJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="Uo4-S5-WQH"/>
                             <constraint firstItem="evT-tk-iPl" firstAttribute="centerX" secondItem="vvx-7I-Rcw" secondAttribute="centerX" id="Up0-3A-X32"/>
                             <constraint firstItem="uDm-xd-qsa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="35" id="av2-Mi-kmg"/>

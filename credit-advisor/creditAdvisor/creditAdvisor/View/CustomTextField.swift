@@ -22,8 +22,18 @@ class CustomTextField: UITextField {
     
     func customizeView ()
     {
+        layer.cornerRadius = 5.0
+        
         backgroundColor = LanguageExtension.rgba(r: 255, g: 255, b: 255, a: 0.25)
         textColor = LanguageExtension.rgba(r: 255, g: 255, b: 255)
+        textAlignment = .center
+        
+        if let p = placeholder
+        {
+            let place = NSAttributedString(string: p, attributes: [.foregroundColor: UIColor.white])
+            attributedPlaceholder = place
+            textColor = UIColor.white
+        }
     }
 
 }
