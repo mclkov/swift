@@ -22,9 +22,6 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         
         logoPixelPerfect()
         setPickerMonths()
-        
-        self.pickerMonths.delegate = self
-        self.pickerMonths.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -33,6 +30,8 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 //        pickerMonthsData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12]
         pickerMonthsData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" ,"12"]
         // Connect data:
+        self.pickerMonths.delegate = self
+        self.pickerMonths.dataSource = self
         
     }
 
@@ -48,20 +47,17 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 2
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerMonthsData.count
     }
     
-//    func pickerView(pickerView: UIPickerView, _ row: Int, forComponent component: Int) -> String {
+//    might be used only if the previous one is deleted
+//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
 //        return pickerMonthsData[row]
 //    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerMonthsData[row]
-    }
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         
