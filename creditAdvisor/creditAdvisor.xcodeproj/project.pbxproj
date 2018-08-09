@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60AE2360211C1AA500352DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE235F211C1AA500352DF2 /* AppDelegate.swift */; };
+		60AE2362211C1AA500352DF2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2361211C1AA500352DF2 /* MainVC.swift */; };
+		60AE2365211C1AA500352DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AE2363211C1AA500352DF2 /* Main.storyboard */; };
+		60AE2367211C1AA500352DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AE2366211C1AA500352DF2 /* Assets.xcassets */; };
+		60AE236A211C1AA500352DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AE2368211C1AA500352DF2 /* LaunchScreen.storyboard */; };
+		60AE2375211C1AA500352DF2 /* creditAdvisorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE2374211C1AA500352DF2 /* creditAdvisorTests.swift */; };
+		60AE2380211C1AA500352DF2 /* creditAdvisorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE237F211C1AA500352DF2 /* creditAdvisorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60AE2371211C1AA500352DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AE2354211C1AA500352DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60AE235B211C1AA500352DF2;
+			remoteInfo = creditAdvisor;
+		};
+		60AE237C211C1AA500352DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AE2354211C1AA500352DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60AE235B211C1AA500352DF2;
+			remoteInfo = creditAdvisor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		60AE235C211C1AA500352DF2 /* creditAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = creditAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AE235F211C1AA500352DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60AE2361211C1AA500352DF2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		60AE2364211C1AA500352DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60AE2366211C1AA500352DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60AE2369211C1AA500352DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60AE236B211C1AA500352DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AE2370211C1AA500352DF2 /* creditAdvisorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = creditAdvisorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AE2374211C1AA500352DF2 /* creditAdvisorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditAdvisorTests.swift; sourceTree = "<group>"; };
+		60AE2376211C1AA500352DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AE237B211C1AA500352DF2 /* creditAdvisorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = creditAdvisorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AE237F211C1AA500352DF2 /* creditAdvisorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditAdvisorUITests.swift; sourceTree = "<group>"; };
+		60AE2381211C1AA500352DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60AE2359211C1AA500352DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AE236D211C1AA500352DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AE2378211C1AA500352DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60AE2353211C1AA500352DF2 = {
+			isa = PBXGroup;
+			children = (
+				60AE235E211C1AA500352DF2 /* creditAdvisor */,
+				60AE2373211C1AA500352DF2 /* creditAdvisorTests */,
+				60AE237E211C1AA500352DF2 /* creditAdvisorUITests */,
+				60AE235D211C1AA500352DF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60AE235D211C1AA500352DF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60AE235C211C1AA500352DF2 /* creditAdvisor.app */,
+				60AE2370211C1AA500352DF2 /* creditAdvisorTests.xctest */,
+				60AE237B211C1AA500352DF2 /* creditAdvisorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60AE235E211C1AA500352DF2 /* creditAdvisor */ = {
+			isa = PBXGroup;
+			children = (
+				60AE238F211C1AEC00352DF2 /* Model */,
+				60AE238D211C1AD800352DF2 /* View */,
+				60AE238E211C1AE400352DF2 /* Controller */,
+				60AE2363211C1AA500352DF2 /* Main.storyboard */,
+				60AE235F211C1AA500352DF2 /* AppDelegate.swift */,
+				60AE2366211C1AA500352DF2 /* Assets.xcassets */,
+				60AE2368211C1AA500352DF2 /* LaunchScreen.storyboard */,
+				60AE236B211C1AA500352DF2 /* Info.plist */,
+			);
+			path = creditAdvisor;
+			sourceTree = "<group>";
+		};
+		60AE2373211C1AA500352DF2 /* creditAdvisorTests */ = {
+			isa = PBXGroup;
+			children = (
+				60AE2374211C1AA500352DF2 /* creditAdvisorTests.swift */,
+				60AE2376211C1AA500352DF2 /* Info.plist */,
+			);
+			path = creditAdvisorTests;
+			sourceTree = "<group>";
+		};
+		60AE237E211C1AA500352DF2 /* creditAdvisorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60AE237F211C1AA500352DF2 /* creditAdvisorUITests.swift */,
+				60AE2381211C1AA500352DF2 /* Info.plist */,
+			);
+			path = creditAdvisorUITests;
+			sourceTree = "<group>";
+		};
+		60AE238D211C1AD800352DF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60AE238E211C1AE400352DF2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60AE2361211C1AA500352DF2 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60AE238F211C1AEC00352DF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60AE235B211C1AA500352DF2 /* creditAdvisor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60AE2384211C1AA500352DF2 /* Build configuration list for PBXNativeTarget "creditAdvisor" */;
+			buildPhases = (
+				60AE2358211C1AA500352DF2 /* Sources */,
+				60AE2359211C1AA500352DF2 /* Frameworks */,
+				60AE235A211C1AA500352DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = creditAdvisor;
+			productName = creditAdvisor;
+			productReference = 60AE235C211C1AA500352DF2 /* creditAdvisor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60AE236F211C1AA500352DF2 /* creditAdvisorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60AE2387211C1AA500352DF2 /* Build configuration list for PBXNativeTarget "creditAdvisorTests" */;
+			buildPhases = (
+				60AE236C211C1AA500352DF2 /* Sources */,
+				60AE236D211C1AA500352DF2 /* Frameworks */,
+				60AE236E211C1AA500352DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60AE2372211C1AA500352DF2 /* PBXTargetDependency */,
+			);
+			name = creditAdvisorTests;
+			productName = creditAdvisorTests;
+			productReference = 60AE2370211C1AA500352DF2 /* creditAdvisorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60AE237A211C1AA500352DF2 /* creditAdvisorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60AE238A211C1AA500352DF2 /* Build configuration list for PBXNativeTarget "creditAdvisorUITests" */;
+			buildPhases = (
+				60AE2377211C1AA500352DF2 /* Sources */,
+				60AE2378211C1AA500352DF2 /* Frameworks */,
+				60AE2379211C1AA500352DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60AE237D211C1AA500352DF2 /* PBXTargetDependency */,
+			);
+			name = creditAdvisorUITests;
+			productName = creditAdvisorUITests;
+			productReference = 60AE237B211C1AA500352DF2 /* creditAdvisorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60AE2354211C1AA500352DF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = McL;
+				TargetAttributes = {
+					60AE235B211C1AA500352DF2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					60AE236F211C1AA500352DF2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 60AE235B211C1AA500352DF2;
+					};
+					60AE237A211C1AA500352DF2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 60AE235B211C1AA500352DF2;
+					};
+				};
+			};
+			buildConfigurationList = 60AE2357211C1AA500352DF2 /* Build configuration list for PBXProject "creditAdvisor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60AE2353211C1AA500352DF2;
+			productRefGroup = 60AE235D211C1AA500352DF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60AE235B211C1AA500352DF2 /* creditAdvisor */,
+				60AE236F211C1AA500352DF2 /* creditAdvisorTests */,
+				60AE237A211C1AA500352DF2 /* creditAdvisorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60AE235A211C1AA500352DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AE236A211C1AA500352DF2 /* LaunchScreen.storyboard in Resources */,
+				60AE2367211C1AA500352DF2 /* Assets.xcassets in Resources */,
+				60AE2365211C1AA500352DF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AE236E211C1AA500352DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AE2379211C1AA500352DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60AE2358211C1AA500352DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AE2362211C1AA500352DF2 /* MainVC.swift in Sources */,
+				60AE2360211C1AA500352DF2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AE236C211C1AA500352DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AE2375211C1AA500352DF2 /* creditAdvisorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AE2377211C1AA500352DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AE2380211C1AA500352DF2 /* creditAdvisorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60AE2372211C1AA500352DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60AE235B211C1AA500352DF2 /* creditAdvisor */;
+			targetProxy = 60AE2371211C1AA500352DF2 /* PBXContainerItemProxy */;
+		};
+		60AE237D211C1AA500352DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60AE235B211C1AA500352DF2 /* creditAdvisor */;
+			targetProxy = 60AE237C211C1AA500352DF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60AE2363211C1AA500352DF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60AE2364211C1AA500352DF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60AE2368211C1AA500352DF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60AE2369211C1AA500352DF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60AE2382211C1AA500352DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60AE2383211C1AA500352DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60AE2385211C1AA500352DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = creditAdvisor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = noneinc.creditAdvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60AE2386211C1AA500352DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = creditAdvisor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = noneinc.creditAdvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60AE2388211C1AA500352DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = creditAdvisorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = noneinc.creditAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/creditAdvisor.app/creditAdvisor";
+			};
+			name = Debug;
+		};
+		60AE2389211C1AA500352DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = creditAdvisorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = noneinc.creditAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/creditAdvisor.app/creditAdvisor";
+			};
+			name = Release;
+		};
+		60AE238B211C1AA500352DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = creditAdvisorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = noneinc.creditAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = creditAdvisor;
+			};
+			name = Debug;
+		};
+		60AE238C211C1AA500352DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = creditAdvisorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = noneinc.creditAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = creditAdvisor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60AE2357211C1AA500352DF2 /* Build configuration list for PBXProject "creditAdvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AE2382211C1AA500352DF2 /* Debug */,
+				60AE2383211C1AA500352DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60AE2384211C1AA500352DF2 /* Build configuration list for PBXNativeTarget "creditAdvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AE2385211C1AA500352DF2 /* Debug */,
+				60AE2386211C1AA500352DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60AE2387211C1AA500352DF2 /* Build configuration list for PBXNativeTarget "creditAdvisorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AE2388211C1AA500352DF2 /* Debug */,
+				60AE2389211C1AA500352DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60AE238A211C1AA500352DF2 /* Build configuration list for PBXNativeTarget "creditAdvisorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AE238B211C1AA500352DF2 /* Debug */,
+				60AE238C211C1AA500352DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60AE2354211C1AA500352DF2 /* Project object */;
+}
