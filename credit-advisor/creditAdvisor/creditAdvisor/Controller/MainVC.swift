@@ -47,21 +47,14 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 2
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerMonthsData.count
     }
     
-//    might be used only if the previous one is deleted
-//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        return pickerMonthsData[row]
-//    }
-    
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        
-//        let string = "myString"
         return NSAttributedString(string: pickerMonthsData[row], attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
     }
 }

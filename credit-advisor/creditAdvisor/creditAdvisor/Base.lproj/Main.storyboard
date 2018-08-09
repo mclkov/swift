@@ -61,16 +61,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S8E-lq-3en">
-                                <rect key="frame" x="65" y="405" width="190.5" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S8E-lq-3en">
+                                <rect key="frame" x="65" y="355" width="190.5" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="First month is 0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gi-9i-c2P">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First month is 0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gi-9i-c2P">
                                         <rect key="frame" x="0.0" y="0.0" width="131.5" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-Bt-UDa">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-Bt-UDa">
                                         <rect key="frame" x="141.5" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
@@ -92,6 +92,7 @@
                             <constraint firstItem="vvx-7I-Rcw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLh-bC-6Up"/>
                             <constraint firstItem="xx0-rQ-hIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NgS-i6-U38"/>
                             <constraint firstItem="NIm-i7-YA9" firstAttribute="top" secondItem="evT-tk-iPl" secondAttribute="bottom" constant="20" id="OT6-Xx-lEi"/>
+                            <constraint firstItem="S8E-lq-3en" firstAttribute="top" secondItem="NIm-i7-YA9" secondAttribute="bottom" constant="20" id="S6J-o5-Uxo"/>
                             <constraint firstItem="xx0-rQ-hIT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="U1q-Yr-TNq"/>
                             <constraint firstItem="evT-tk-iPl" firstAttribute="height" secondItem="vvx-7I-Rcw" secondAttribute="height" id="Uih-Fd-yMe"/>
                             <constraint firstItem="Pgg-IV-fPJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="Uo4-S5-WQH"/>
