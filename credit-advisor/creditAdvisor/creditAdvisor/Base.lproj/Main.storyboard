@@ -141,6 +141,7 @@
                         <outlet property="logoLabelB" destination="uDm-xd-qsa" id="rEw-Re-gBD"/>
                         <outlet property="percentsText" destination="evT-tk-iPl" id="c8z-3a-bqe"/>
                         <outlet property="pickerMonths" destination="NIm-i7-YA9" id="2EW-lW-OyD"/>
+                        <outlet property="skipMonthSwitch" destination="vBc-Bt-UDa" id="4dF-Wh-3Uo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

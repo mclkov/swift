@@ -15,6 +15,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var itemPriceText: CustomTextField!
     @IBOutlet weak var percentsText: CustomTextField!
+    @IBOutlet weak var skipMonthSwitch: UISwitch!
     
     @IBOutlet weak var endPriceLabel: UILabel!
     @IBOutlet weak var endPriceStack: UIStackView!
@@ -22,7 +23,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     
     @IBOutlet weak var pickerMonths: UIPickerView!
-    var pickedMonths: Int? = 1
+    var pickedMonths: Int? = 2
 //    var pickerMonthsData: [Int] = [Int]()
     var pickerMonthsData: [String] = [String]()
 
@@ -50,7 +51,6 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         percentsText.inputAccessoryView = calcBtn
     }
     
-    
     func calculate () -> Double
     {
         var result: Double = 0
@@ -62,9 +62,11 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             if let price = Double(itemPriceValue),
                 let percents = Int(percentsValue)
             {
-                result = Price.getPrice(itemPrice: price, percents: percents, months: monthValue, freeFirstMonth: false)
+                result = Price.getPrice(itemPrice: price, percents: percents, months: monthValue, freeFirstMonth: skipMonthSwitch.isOn)
             }
         }
+        
+        print("\(skipMonthSwitch.isOn)")
         return result
     }
     
@@ -85,7 +87,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     func setPickerMonths()
     {
 //        pickerMonthsData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12]
-        pickerMonthsData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" ,"12"]
+        pickerMonthsData = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11" ,"12"]
         // Connect data:
         self.pickerMonths.delegate = self
         self.pickerMonths.dataSource = self
