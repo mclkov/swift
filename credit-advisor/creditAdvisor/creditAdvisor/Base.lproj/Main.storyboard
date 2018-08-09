@@ -136,8 +136,10 @@
                     <connections>
                         <outlet property="endPriceLabel" destination="HRH-b0-fcE" id="dRS-SO-K9U"/>
                         <outlet property="endPriceStack" destination="BZI-AK-k4P" id="DMt-AK-zKX"/>
+                        <outlet property="itemPriceText" destination="vvx-7I-Rcw" id="Ugi-H6-C2W"/>
                         <outlet property="logoLabelA" destination="Pgg-IV-fPJ" id="Fj8-tq-4ih"/>
                         <outlet property="logoLabelB" destination="uDm-xd-qsa" id="rEw-Re-gBD"/>
+                        <outlet property="percentsText" destination="evT-tk-iPl" id="c8z-3a-bqe"/>
                         <outlet property="pickerMonths" destination="NIm-i7-YA9" id="2EW-lW-OyD"/>
                     </connections>
                 </viewController>
