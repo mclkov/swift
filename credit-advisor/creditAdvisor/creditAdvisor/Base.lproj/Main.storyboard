@@ -49,7 +49,7 @@
                                 <rect key="frame" x="35" y="110.5" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="AYJ-NE-Het"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="hXW-gd-ieX"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="hXW-gd-ieX"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -75,9 +75,11 @@
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-i7-YA9">
-                                <rect key="frame" x="69" y="235" width="186" height="109"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-i7-YA9">
+                                <rect key="frame" x="35" y="235" width="250" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gug-wT-psV"/>
+                                </constraints>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,13 +91,16 @@
                             <constraint firstItem="evT-tk-iPl" firstAttribute="width" secondItem="vvx-7I-Rcw" secondAttribute="width" id="JJz-5C-zR6"/>
                             <constraint firstItem="vvx-7I-Rcw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLh-bC-6Up"/>
                             <constraint firstItem="xx0-rQ-hIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NgS-i6-U38"/>
+                            <constraint firstItem="NIm-i7-YA9" firstAttribute="top" secondItem="evT-tk-iPl" secondAttribute="bottom" constant="20" id="OT6-Xx-lEi"/>
                             <constraint firstItem="xx0-rQ-hIT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="U1q-Yr-TNq"/>
                             <constraint firstItem="evT-tk-iPl" firstAttribute="height" secondItem="vvx-7I-Rcw" secondAttribute="height" id="Uih-Fd-yMe"/>
                             <constraint firstItem="Pgg-IV-fPJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="Uo4-S5-WQH"/>
                             <constraint firstItem="evT-tk-iPl" firstAttribute="centerX" secondItem="vvx-7I-Rcw" secondAttribute="centerX" id="Up0-3A-X32"/>
                             <constraint firstItem="uDm-xd-qsa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="35" id="av2-Mi-kmg"/>
                             <constraint firstItem="vvx-7I-Rcw" firstAttribute="top" secondItem="uDm-xd-qsa" secondAttribute="bottom" constant="25" id="evu-pU-94k"/>
+                            <constraint firstItem="NIm-i7-YA9" firstAttribute="width" secondItem="evT-tk-iPl" secondAttribute="width" id="h6N-Pr-7i3"/>
                             <constraint firstItem="xx0-rQ-hIT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j9A-yz-i6e"/>
+                            <constraint firstItem="NIm-i7-YA9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lxQ-g9-1dT"/>
                             <constraint firstItem="uDm-xd-qsa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="35" id="uVE-Wj-ZxM"/>
                         </constraints>
                     </view>
