@@ -22,6 +22,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     
     @IBOutlet weak var pickerMonths: UIPickerView!
+    var pickedMonths: Int? = 1
 //    var pickerMonthsData: [Int] = [Int]()
     var pickerMonthsData: [String] = [String]()
 
@@ -43,27 +44,10 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         calcBtn.setTitle("Calculate", for: .normal)
         calcBtn.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
 
-        calcBtn.addTarget(self, action: #selector(MainVC.calculate), for: .touchUpInside)
+        calcBtn.addTarget(self, action: #selector(MainVC.showCalculations), for: .touchUpInside)
 
         itemPriceText.inputAccessoryView = calcBtn
         percentsText.inputAccessoryView = calcBtn
-    }
-    
-    @objc func calculate2 ()
-    {
-        if let itemPriceValue = itePriceText.text, let percentsValue = percentsText.text {
-            if let price = Double(itemPriceValue), let percents = Double(percentsValue) {
-                view.endEditing(true)
-                
-            }
-        }
-//        if let wageValue = wageTxt.text, let priceValue = priceTxt.text {
-//            if let wage = Double(wageValue), let price = Double(priceValue) {
-//                view.endEditing(true)
-//                resultAvailable(status: true)
-//                resultLabel.text = "\(Wage.getHours(forWage: wage, endPrice: price))"
-//            }
-//        }
     }
     
     
@@ -71,37 +55,24 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     {
         var result: Double = 0
         if let itemPriceValue = itemPriceText.text,
-            let percentsValue = percentsText.text
+            let percentsValue = percentsText.text,
+            let monthValue = pickedMonths
         {
             
             if let price = Double(itemPriceValue),
                 let percents = Int(percentsValue)
             {
-                view.endEditing(true)
-                result = Price.getPrice(itemPrice: price, percents: percents, months: 12, freeFirstMonth: true)
+                result = Price.getPrice(itemPrice: price, percents: percents, months: monthValue, freeFirstMonth: false)
             }
         }
         return result
     }
     
-    
     @objc func showCalculations(endPrice: Double)
     {
-        endPriceLabel.text = "\(calculate())"
-        endPriceStack.isHidden = false
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    func showCalculations2(endPrice: Double)
-    {
+        view.endEditing(true)
         
-//        endPriceLabel.text = "\(Price.getPrice)"
+        endPriceLabel.text = "\(calculate())"
         endPriceStack.isHidden = false
     }
     
@@ -110,11 +81,6 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
        endPriceLabel.text = ""
        endPriceStack.isHidden = true
     }
-    
-//    func calculate()
-//    {
-//       endPriceStack.isHidden = false
-//    }
     
     func setPickerMonths()
     {
@@ -135,6 +101,11 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        pickedMonths = Int(pickerMonthsData[row])
+//        print("Selected: \(pickedMonths)")
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
