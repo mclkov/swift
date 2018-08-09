@@ -8,15 +8,15 @@
 
 import UIKit
 
-class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
-
+class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var logoLabelA: UILabel!
     @IBOutlet weak var logoLabelB: UILabel!
     
     @IBOutlet weak var pickerMonths: UIPickerView!
-    var pickerMonthsData: [Int] = [Int]()
-    
+//    var pickerMonthsData: [Int] = [Int]()
+    var pickerMonthsData: [String] = [String]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,8 +30,8 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
     func setPickerMonths()
     {
-        pickerMonthsData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12]
-        
+//        pickerMonthsData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12]
+        pickerMonthsData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" ,"12"]
         // Connect data:
         
     }
@@ -45,6 +45,28 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerMonthsData.count
+    }
+    
+//    func pickerView(pickerView: UIPickerView, _ row: Int, forComponent component: Int) -> String {
+//        return pickerMonthsData[row]
+//    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerMonthsData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        
+//        let string = "myString"
+        return NSAttributedString(string: pickerMonthsData[row], attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
     }
 }
 

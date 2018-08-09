@@ -61,29 +61,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S8E-lq-3en">
-                                <rect key="frame" x="65" y="240.5" width="190.5" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S8E-lq-3en">
+                                <rect key="frame" x="65" y="405" width="190.5" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First month is 0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gi-9i-c2P">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="First month is 0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gi-9i-c2P">
                                         <rect key="frame" x="0.0" y="0.0" width="131.5" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-Bt-UDa">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-Bt-UDa">
                                         <rect key="frame" x="141.5" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                             </stackView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-i7-YA9">
-                                <rect key="frame" x="0.0" y="279" width="320" height="162"/>
+                                <rect key="frame" x="69" y="235" width="186" height="109"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="evT-tk-iPl" firstAttribute="top" secondItem="vvx-7I-Rcw" secondAttribute="bottom" constant="25" id="2LF-2d-sUs"/>
-                            <constraint firstItem="S8E-lq-3en" firstAttribute="top" secondItem="evT-tk-iPl" secondAttribute="bottom" constant="25" id="2Va-Td-69G"/>
                             <constraint firstItem="Pgg-IV-fPJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-30" id="A5V-Zc-xS7"/>
                             <constraint firstItem="S8E-lq-3en" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZS-XZ-Gp3"/>
                             <constraint firstItem="xx0-rQ-hIT" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="CmD-s7-xvG"/>
@@ -108,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+            <point key="canvasLocation" x="31.875" y="32.5"/>
         </scene>
     </scenes>
     <resources>
