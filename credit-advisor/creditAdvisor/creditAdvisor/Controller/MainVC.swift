@@ -10,6 +10,9 @@ import UIKit
 
 class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    @IBOutlet weak var endPriceLabel: UILabel!
+    @IBOutlet weak var endPriceStack: UIStackView!
+    
     @IBOutlet weak var logoLabelA: UILabel!
     @IBOutlet weak var logoLabelB: UILabel!
     
@@ -22,7 +25,19 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         
         logoPixelPerfect()
         setPickerMonths()
+        resetCalculations()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func resetCalculations()
+    {
+       endPriceLabel.text = ""
+       endPriceStack.isHidden = true
+    }
+    
+    func calculate()
+    {
+       endPriceStack.isHidden = false
     }
     
     func setPickerMonths()
