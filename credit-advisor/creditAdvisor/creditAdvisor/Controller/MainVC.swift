@@ -35,6 +35,9 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         resetCalculations()
         
         drawCalculateButton()
+        
+//        var row = pickerMonths.selectedRow(inComponent: 0)
+//        pickerMonths
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -86,8 +89,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     func setPickerMonths()
     {
-//        pickerMonthsData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12]
-        pickerMonthsData = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11" ,"12"]
+        pickerMonthsData = ["Select months:", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" ,"12"]
         // Connect data:
         self.pickerMonths.delegate = self
         self.pickerMonths.dataSource = self
@@ -106,8 +108,11 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        pickedMonths = Int(pickerMonthsData[row])
-//        print("Selected: \(pickedMonths)")
+        if row == 0 {
+            pickerMonths.selectRow(1, inComponent: 0, animated: true)
+        }else{
+            pickedMonths = Int(pickerMonthsData[row])
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
