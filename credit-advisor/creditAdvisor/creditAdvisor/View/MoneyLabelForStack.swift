@@ -12,16 +12,18 @@ import UIKit
 class MoneyLabelForStack: UIStackView {
 
     override func draw(_ rect: CGRect) {
-        let size: CGFloat = 20
+        let size: CGFloat = 40
+        let middleLine: CGFloat = -9
         let currencyLabel = UILabel(
             frame:
             CGRect(
-                x: -5,
-                y: (frame.size.height / 2) - size / 2,
+                x: -50,
+                y: ((frame.size.height / 2) - size / 2) + middleLine,
                 width: size,
                 height: size
             )
         )
+        currencyLabel.font = UIFont(name: "Copperplate-Bold", size: 40)
         currencyLabel.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 0.8523602553)
         currencyLabel.textAlignment = .center
         currencyLabel.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
@@ -32,7 +34,7 @@ class MoneyLabelForStack: UIStackView {
         formatter.locale = .current
         currencyLabel.text = formatter.currencySymbol
         
-        //        currencyLabel.clipsToBounds = true
+        currencyLabel.clipsToBounds = true
         
         addSubview(currencyLabel)
     }
