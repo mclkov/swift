@@ -114,10 +114,10 @@
                                 </variation>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BZI-AK-k4P" customClass="MoneyLabelForStack" customModule="creditAdvisor" customModuleProvider="target">
-                                <rect key="frame" x="294" y="549.5" width="180" height="70"/>
+                                <rect key="frame" x="315.5" y="549.5" width="137.5" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRH-b0-fcE">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="137.5" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="e40-CB-Bpo"/>
                                             <constraint firstAttribute="height" constant="50" id="xJT-4K-SUO"/>
@@ -139,7 +139,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="end price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdb-hy-cLq">
-                                        <rect key="frame" x="0.0" y="50" width="180" height="20"/>
+                                        <rect key="frame" x="0.0" y="50" width="137.5" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="cEy-IT-zXU"/>
                                         </constraints>
@@ -148,19 +148,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="vCe-9S-hBh"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="vCe-9S-hBh"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="vCe-9S-hBh"/>
-                                    </mask>
-                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
