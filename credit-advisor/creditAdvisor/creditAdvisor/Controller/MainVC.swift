@@ -24,9 +24,8 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var pickerMonths: UIPickerView!
     var pickedMonths: Int? = 2
-//    var pickerMonthsData: [Int] = [Int]()
     var pickerMonthsData: [String] = [String]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,10 +34,11 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         resetCalculations()
         
         drawCalculateButton()
-        
-//        var row = pickerMonths.selectedRow(inComponent: 0)
-//        pickerMonths
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBAction func onSkipMonths(_ sender: Any) {
+        showCalculations()
     }
     
     func drawCalculateButton()
