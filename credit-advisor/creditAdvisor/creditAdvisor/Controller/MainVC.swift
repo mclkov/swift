@@ -73,7 +73,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         return result
     }
     
-    @objc func showCalculations(endPrice: Double)
+    @objc func showCalculations()
     {
         view.endEditing(true)
         
@@ -109,10 +109,12 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if row == 0 {
+            pickedMonths = 2
             pickerMonths.selectRow(1, inComponent: 0, animated: true)
         }else{
             pickedMonths = Int(pickerMonthsData[row])
         }
+        showCalculations()
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
