@@ -44,7 +44,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     func drawCalculateButton()
     {
         let calcBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
-        calcBtn.backgroundColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+        calcBtn.backgroundColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
         calcBtn.setTitle("Calculate", for: .normal)
         calcBtn.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
 
@@ -68,8 +68,6 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
                 result = Price.getPrice(itemPrice: price, percents: percents, months: monthValue, freeFirstMonth: skipMonthSwitch.isOn)
             }
         }
-        
-        print("\(skipMonthSwitch.isOn)")
         return result
     }
     
