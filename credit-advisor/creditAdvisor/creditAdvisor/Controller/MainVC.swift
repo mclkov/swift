@@ -73,9 +73,11 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @objc func showCalculations()
     {
+        let numberValue = NSNumber(value: calculate())
+        let formattedNumber = NumberFormatter.localizedString(from: numberValue, number: NumberFormatter.Style.decimal)
         view.endEditing(true)
         
-        endPriceLabel.text = "\(calculate())"
+        endPriceLabel.text = "\(formattedNumber)"
         endPriceStack.isHidden = false
     }
     
