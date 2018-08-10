@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -114,11 +113,11 @@
                                     </mask>
                                 </variation>
                             </pickerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BZI-AK-k4P">
-                                <rect key="frame" x="309" y="549.5" width="150" height="70"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BZI-AK-k4P" customClass="MoneyLabelForStack" customModule="creditAdvisor" customModuleProvider="target">
+                                <rect key="frame" x="294" y="549.5" width="180" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRH-b0-fcE">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="e40-CB-Bpo"/>
                                             <constraint firstAttribute="height" constant="50" id="xJT-4K-SUO"/>
@@ -140,7 +139,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="end price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdb-hy-cLq">
-                                        <rect key="frame" x="0.0" y="50" width="150" height="20"/>
+                                        <rect key="frame" x="0.0" y="50" width="180" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="cEy-IT-zXU"/>
                                         </constraints>
@@ -150,7 +149,7 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="vCe-9S-hBh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="vCe-9S-hBh"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -189,7 +188,6 @@
                             <constraint firstItem="NIm-i7-YA9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lxQ-g9-1dT"/>
                             <constraint firstItem="uDm-xd-qsa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="35" id="uVE-Wj-ZxM"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cy9-oA-ToE"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="bQ4-lR-KTl"/>
