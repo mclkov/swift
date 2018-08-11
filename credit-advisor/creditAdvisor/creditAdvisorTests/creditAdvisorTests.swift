@@ -35,15 +35,15 @@ class creditAdvisorTests: XCTestCase {
     
     func testGetPrice ()
     {
-        print("\(Price.getPrice(itemPrice: 99.99, percents: 5, months: 12, freeFirstMonth: true))")
+        print("\(Price.getPrice(itemPrice: 99.9, percents: 5, months: 12, freeFirstMonth: true))")
         
-        XCTAssert(Price.getPrice(itemPrice: 100, percents: 5, months: 12, freeFirstMonth: false) == 60)
-        XCTAssert(Price.getPrice(itemPrice: 99.99, percents: 5, months: 12, freeFirstMonth: false) == 60) // 59.994
-        XCTAssert(Price.getPrice(itemPrice: 99.9, percents: 5, months: 12, freeFirstMonth: false) == 59.95) // 59.94
+        XCTAssert(Price.getPrice(itemPrice: 100, percents: 5, months: 12, freeFirstMonth: false) == 160)
+        XCTAssert(Price.getPrice(itemPrice: 99.99, percents: 5, months: 12, freeFirstMonth: false) == 159.99) // 59.994
+        XCTAssert(Price.getPrice(itemPrice: 99.9, percents: 5, months: 12, freeFirstMonth: false) == 159.85) // 59.94
         
-        XCTAssert(Price.getPrice(itemPrice: 100, percents: 5, months: 12, freeFirstMonth: true) == 55)
-        XCTAssert(Price.getPrice(itemPrice: 99.99, percents: 5, months: 12, freeFirstMonth: true) == 55) // 54.9945
-        XCTAssert(Price.getPrice(itemPrice: 99.9, percents: 5, months: 12, freeFirstMonth: true) == 54.95) // 54.945
+        XCTAssert(Price.getPrice(itemPrice: 100, percents: 5, months: 12, freeFirstMonth: true) == 155)
+        XCTAssert(Price.getPrice(itemPrice: 99.99, percents: 5, months: 12, freeFirstMonth: true) == 154.99) // 54.9945
+        XCTAssert(Price.getPrice(itemPrice: 99.9, percents: 5, months: 12, freeFirstMonth: true) == 154.85) // 54.945
     }
     
     func testPerformanceExample() {

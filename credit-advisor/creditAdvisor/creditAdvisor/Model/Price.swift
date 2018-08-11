@@ -22,7 +22,7 @@ class Price
         }
         
         let amountOneMonth: Double = itemPrice * (Double(percents) / 100)
-        var result: Double = amountOneMonth * Double(months)
+        var result: Double = amountOneMonth * Double(months) + itemPrice
         
         if freeFirstMonth == true {
             result -= amountOneMonth
