@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		604873502126BC460085EFEC /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6048734F2126BC460085EFEC /* Currency.swift */; };
+		604873522126BD960085EFEC /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604873512126BD960085EFEC /* CurrencyCell.swift */; };
 		60C2174021269536009263B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2173F21269536009263B3 /* AppDelegate.swift */; };
 		60C2174221269536009263B3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2174121269536009263B3 /* MainVC.swift */; };
 		60C2174521269536009263B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C2174321269536009263B3 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		6048734F2126BC460085EFEC /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		604873512126BD960085EFEC /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		60C2173C21269536009263B3 /* money-of-the-world.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "money-of-the-world.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C2173F21269536009263B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60C2174121269536009263B3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				60C2177321269D53009263B3 /* CountryCell.swift */,
+				604873512126BD960085EFEC /* CurrencyCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604873522126BD960085EFEC /* CurrencyCell.swift in Sources */,
 				60C2177421269D53009263B3 /* CountryCell.swift in Sources */,
 				60C217782126B329009263B3 /* MoneyVC.swift in Sources */,
 				60C2174221269536009263B3 /* MainVC.swift in Sources */,

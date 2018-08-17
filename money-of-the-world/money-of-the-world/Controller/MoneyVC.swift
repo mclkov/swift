@@ -10,6 +10,8 @@ import UIKit
 
 class MoneyVC: UIViewController {
 
+    @IBOutlet weak var currencyCollection: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

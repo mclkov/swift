@@ -8,8 +8,8 @@
 
 import UIKit
 
-class CountryCell: UITableViewCell {
-
+class CountryCell: UITableViewCell
+{
     @IBOutlet weak var countryName: UILabel!
     @IBOutlet weak var countryImage: UIImageView!
     
