@@ -51,6 +51,10 @@ class MainVC:
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let moneyVC = segue.destination as? MoneyVC
         {
+            let barButton = UIBarButtonItem()
+            barButton.title = ""
+            navigationItem.backBarButtonItem = barButton
+            
             moneyVC.initCurrenciesData(country: sender as! Country)
         }
     }

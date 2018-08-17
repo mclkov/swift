@@ -13,12 +13,14 @@ class MoneyVC:
             UICollectionViewDelegate,
             UICollectionViewDataSource
 {
+    private let minimumSpacing: CGFloat = 0.0
     private(set) public var currencies = [Currency]()
     
     @IBOutlet weak var currencyCollection: UICollectionView!
     
     func initCurrenciesData(country: Country)
     {
+        navigationItem.title = country.name
         self.currencies = DataService.instance.getCurrencies(forCountryName: country.shortName)
     }
     
@@ -47,6 +49,15 @@ class MoneyVC:
             return cell
         }
         return CurrencyCell()
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        minimumLineSpacingForSectionAt section: Int
+        ) -> CGFloat
+    {
+        return minimumSpacing
     }
 
     /*

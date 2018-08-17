@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2WZ-GK-qmn">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,28 +20,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="money_of_the_world" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-tI-HRg">
-                                <rect key="frame" x="0.0" y="114" width="320" height="366"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" rowHeight="120" id="ht0-oY-Uog" customClass="CountryCell" customModule="money_of_the_world" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" rowHeight="120" id="ht0-oY-Uog" customClass="CountryCell" customModule="money_of_the_world" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ht0-oY-Uog" id="na2-Ch-fw3">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eu" translatesAutoresizingMaskIntoConstraints="NO" id="sWa-QY-7ZG">
-                                                    <rect key="frame" x="0.0" y="3" width="320" height="113.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="113.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="SzX-lq-WRB"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="European Union" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AA-Mb-75I">
-                                                    <rect key="frame" x="18" y="46" width="284" height="27.5"/>
+                                                    <rect key="frame" x="18" y="46" width="339" height="27.5"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -65,7 +65,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRIES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX3-Xi-gQp">
-                                <rect key="frame" x="24" y="69" width="272" height="40"/>
+                                <rect key="frame" x="24" y="69" width="327" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3xu-LE-fkI"/>
                                 </constraints>
@@ -100,47 +100,48 @@
             <objects>
                 <viewController id="Ylb-q3-2kA" customClass="MoneyVC" customModule="money_of_the_world" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pwe-Ll-ybl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-hy-Jgi">
-                                <rect key="frame" x="0.0" y="114" width="320" height="366"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <color key="backgroundColor" white="0.92545572916666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C3O-9p-5i2">
-                                    <size key="itemSize" width="180" height="165"/>
+                                    <size key="itemSize" width="182" height="165"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CurrencyCell" id="45U-Zt-fON" customClass="CurrencyCell" customModule="money_of_the_world" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="0.0" width="180" height="165"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="180" height="165"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="165"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usa_1" translatesAutoresizingMaskIntoConstraints="NO" id="Uke-bk-jOq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="130"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eu_1" translatesAutoresizingMaskIntoConstraints="NO" id="Uke-bk-jOq">
+                                                    <rect key="frame" x="0.0" y="3" width="182" height="130"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="130" id="efr-Ns-CZA"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Dollar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgs-u0-giV">
-                                                    <rect key="frame" x="11" y="133" width="158" height="28"/>
+                                                    <rect key="frame" x="11" y="136" width="160" height="28"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="sgs-u0-giV" firstAttribute="top" secondItem="Uke-bk-jOq" secondAttribute="bottom" constant="3" id="37T-VG-SVz"/>
                                             <constraint firstAttribute="trailing" secondItem="Uke-bk-jOq" secondAttribute="trailing" id="Q8P-3S-30m"/>
                                             <constraint firstItem="Uke-bk-jOq" firstAttribute="leading" secondItem="45U-Zt-fON" secondAttribute="leading" id="UQ0-R1-AfV"/>
                                             <constraint firstItem="sgs-u0-giV" firstAttribute="leading" secondItem="45U-Zt-fON" secondAttribute="leadingMargin" constant="3" id="YGd-cf-wkG"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="sgs-u0-giV" secondAttribute="trailing" constant="3" id="ZHx-5w-aXw"/>
-                                            <constraint firstItem="Uke-bk-jOq" firstAttribute="top" secondItem="45U-Zt-fON" secondAttribute="top" id="fwx-dp-UkD"/>
+                                            <constraint firstItem="Uke-bk-jOq" firstAttribute="top" secondItem="45U-Zt-fON" secondAttribute="top" constant="3" id="fwx-dp-UkD"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="currencyImage" destination="Uke-bk-jOq" id="yC1-dK-GVV"/>
@@ -150,7 +151,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENCIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcX-36-jv8">
-                                <rect key="frame" x="24" y="69" width="272" height="40"/>
+                                <rect key="frame" x="24" y="69" width="327" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bYs-G8-TsG"/>
                                 </constraints>
@@ -159,7 +160,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.93000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ixo-hy-Jgi" secondAttribute="bottom" id="1OC-bn-Eoq"/>
                             <constraint firstAttribute="trailing" secondItem="ixo-hy-Jgi" secondAttribute="trailing" id="5Bv-g8-yCD"/>
@@ -184,8 +185,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2WZ-GK-qmn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kz6-GW-8HL">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.4377712673611111" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -199,6 +204,6 @@
     </scenes>
     <resources>
         <image name="eu" width="1920" height="760"/>
-        <image name="usa_1" width="1024" height="450"/>
+        <image name="eu_1" width="400" height="400"/>
     </resources>
 </document>
