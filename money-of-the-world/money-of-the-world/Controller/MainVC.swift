@@ -8,8 +8,22 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class MainVC:
+            UIViewController,
+            UITableViewDelegate,
+            UITableViewDataSource
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
 
+    @IBOutlet weak var countriesTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

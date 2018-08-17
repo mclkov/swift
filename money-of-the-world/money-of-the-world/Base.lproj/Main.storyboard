@@ -80,6 +80,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Money of the World" id="6O1-tZ-5Y4"/>
+                    <connections>
+                        <outlet property="countriesTable" destination="Y4J-tI-HRg" id="wzH-a1-h8k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
