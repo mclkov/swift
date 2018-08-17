@@ -17,8 +17,6 @@ class DataService
         Country(shortName: "eu", name: "European Union", imageName: "eu.jpg")
     ]
     
-    private let currencies = [Currency]()
-    
     private let usaCurrencies = [
         Currency(name: "1 Dollar", imageName: "usa_1.jpg"),
         Currency(name: "2 Dollars", imageName: "usa_2.jpg"),
@@ -30,6 +28,19 @@ class DataService
         Currency(name: "2 Euros", imageName: "eu_2.jpg"),
         Currency(name: "5 Euros", imageName: "eu_5.png")
     ]
+    
+    func getCurrencies(country: String) -> [Currency]
+    {
+        switch country
+        {
+            case "usa":
+                return usaCurrencies
+            case "eu":
+                return euCurrencies
+            default:
+                return usaCurrencies
+        }
+    }
     
     func getCountries() -> [Country]
     {
