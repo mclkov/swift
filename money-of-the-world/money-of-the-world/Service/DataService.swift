@@ -29,7 +29,7 @@ class DataService
         Currency(name: "5 Euros", imageName: "eu_5.png")
     ]
     
-    func getCurrencies(country: String) -> [Currency]
+    func getCurrencies(forCountryName country: String) -> [Currency]
     {
         switch country
         {
