@@ -1,5 +1,5 @@
 //
-//  Country.swift
+//  Currency.swift
 //  money-of-the-world
 //
 //  Created by McL on 8/17/18.
@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Country
+struct Currency
 {
     private(set) public var name: String
     private(set) public var imageName: String
