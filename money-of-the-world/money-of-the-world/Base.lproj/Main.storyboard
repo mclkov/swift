@@ -146,6 +146,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="currencyImage" destination="Uke-bk-jOq" id="yC1-dK-GVV"/>
+                                            <outlet property="currencyName" destination="sgs-u0-giV" id="aSR-Rh-kfU"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
