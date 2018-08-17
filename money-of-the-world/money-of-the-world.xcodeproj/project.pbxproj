@@ -17,6 +17,7 @@
 		60C2177221269C83009263B3 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2177121269C83009263B3 /* Country.swift */; };
 		60C2177421269D53009263B3 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2177321269D53009263B3 /* CountryCell.swift */; };
 		60C217762126A903009263B3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C217752126A903009263B3 /* DataService.swift */; };
+		60C217782126B329009263B3 /* MoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C217772126B329009263B3 /* MoneyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		60C2177121269C83009263B3 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		60C2177321269D53009263B3 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		60C217752126A903009263B3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		60C217772126B329009263B3 /* MoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				60C2174121269536009263B3 /* MainVC.swift */,
+				60C217772126B329009263B3 /* MoneyVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C2177421269D53009263B3 /* CountryCell.swift in Sources */,
+				60C217782126B329009263B3 /* MoneyVC.swift in Sources */,
 				60C2174221269536009263B3 /* MainVC.swift in Sources */,
 				60C2177221269C83009263B3 /* Country.swift in Sources */,
 				60C2174021269536009263B3 /* AppDelegate.swift in Sources */,

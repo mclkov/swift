@@ -88,11 +88,26 @@
                     <navigationItem key="navigationItem" title="Money of the World" id="6O1-tZ-5Y4"/>
                     <connections>
                         <outlet property="countriesTable" destination="Y4J-tI-HRg" id="wzH-a1-h8k"/>
+                        <segue destination="Ylb-q3-2kA" kind="show" identifier="MoneyVC" id="0wQ-QR-y10"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="33.733133433283363"/>
+            <point key="canvasLocation" x="293" y="34"/>
+        </scene>
+        <!--MoneyVC-->
+        <scene sceneID="BhF-xO-vzS">
+            <objects>
+                <viewController id="Ylb-q3-2kA" customClass="MoneyVC" customModule="money_of_the_world" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pwe-Ll-ybl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5E-DB-KLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="34"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="06n-SZ-VZD">
