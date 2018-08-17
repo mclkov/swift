@@ -42,5 +42,17 @@ class MainVC:
         }
         return CountryCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let country = DataService.instance.getCountries()[indexPath.row]
+        performSegue(withIdentifier: "MoneyVC", sender: country)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let moneyVC = segue.destination as? MoneyVC
+        {
+            moneyVC.initCurrenciesData(country: sender as! Country)
+        }
+    }
 }
 
