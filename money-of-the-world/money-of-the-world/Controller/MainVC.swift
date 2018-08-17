@@ -13,12 +13,12 @@ class MainVC:
             UITableViewDelegate,
             UITableViewDataSource
 {
-    
     @IBOutlet weak var countriesTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.countriesTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         countriesTable.dataSource = self
         countriesTable.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,6 +42,5 @@ class MainVC:
         }
         return CountryCell()
     }
-
 }
 

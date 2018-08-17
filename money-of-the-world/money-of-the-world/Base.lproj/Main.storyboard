@@ -35,9 +35,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eu" translatesAutoresizingMaskIntoConstraints="NO" id="sWa-QY-7ZG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                                    <rect key="frame" x="0.0" y="3" width="320" height="113.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="120" id="LVJ-5M-jm7"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="SzX-lq-WRB"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="European Union" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AA-Mb-75I">
@@ -49,11 +49,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2AA-Mb-75I" secondAttribute="trailing" constant="3" id="6yN-yS-FhX"/>
-                                                <constraint firstItem="sWa-QY-7ZG" firstAttribute="top" secondItem="na2-Ch-fw3" secondAttribute="top" id="7A7-G3-v03"/>
-                                                <constraint firstAttribute="bottom" secondItem="sWa-QY-7ZG" secondAttribute="bottom" id="Nm8-LL-Ehl"/>
+                                                <constraint firstAttribute="bottom" secondItem="sWa-QY-7ZG" secondAttribute="bottom" constant="3" id="FPK-4z-MkB"/>
                                                 <constraint firstItem="2AA-Mb-75I" firstAttribute="leading" secondItem="na2-Ch-fw3" secondAttribute="leadingMargin" constant="3" id="O3k-XC-G9T"/>
                                                 <constraint firstItem="sWa-QY-7ZG" firstAttribute="leading" secondItem="na2-Ch-fw3" secondAttribute="leading" id="Qgg-O4-djL"/>
                                                 <constraint firstAttribute="trailing" secondItem="sWa-QY-7ZG" secondAttribute="trailing" id="TsE-RW-I4p"/>
+                                                <constraint firstItem="sWa-QY-7ZG" firstAttribute="top" secondItem="na2-Ch-fw3" secondAttribute="top" constant="3" id="Vjf-sx-y1N"/>
                                                 <constraint firstItem="2AA-Mb-75I" firstAttribute="centerY" secondItem="na2-Ch-fw3" secondAttribute="centerY" id="g3G-9s-0m2"/>
                                             </constraints>
                                         </tableViewCellContentView>
